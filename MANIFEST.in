@@ -1,0 +1,9 @@
+include README.rst
+include CHANGELOG.txt
+recursive-include docs *
+global-exclude .DS_Store
+global-exclude Thumbs.db
+global-exclude Desktop.ini
+global-exclude *.swp
+global-exclude *~
+global-exclude *.bak
