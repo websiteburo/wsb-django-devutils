@@ -1,9 +1,16 @@
 # -*- coding:utf-8 -*-
+import unittest
 
-from django.test.simple import reorder_suite, build_test, build_suite
+try:
+    # 1.5.x
+    from django.test.simple import reorder_suite
+except ImportError:
+    # 1.6.x
+    from django.test.runner import reorder_suite
+
+from django.test.simple import build_test, build_suite
 from django.db.models import get_apps, get_app
 from django.test.testcases import TestCase
-import unittest
 from django.conf import settings
 from django.test.simple import DjangoTestSuiteRunner
 
