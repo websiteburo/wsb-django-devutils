@@ -39,7 +39,7 @@ class DevEmailBackend(smtp.EmailBackend):
 
         recipients = RECIPIENTS
         for mail_address in original_recipients:
-            if mail_address in EXCEPTIONS and mails_address not in recipients:
+            if mail_address in EXCEPTIONS and mail_address not in recipients:
                 recipients.append(mail_address)
         
         try:
