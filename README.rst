@@ -13,8 +13,7 @@ Installation
 
 wsb-django-devutils est packagé pour être installable via pip::
 
-    pip install git+ssh://git@dev.websiteburo.com/wsb-django-devutils.git@master
-
+    pip install https://github.com/websiteburo/wsb-django-devutils.git@master
 
 Configuration et utilisation
 ============================
